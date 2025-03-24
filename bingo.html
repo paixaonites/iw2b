@@ -82,5 +82,45 @@
             </tbody>
         </table>
     </div>
+    <script type="text/javascript">
+        var cartelaB = [];//1 a 15
+        var cartelaI = [];//16 a 30
+        var cartelaN = [];//31 a 45
+        var cartelaG = [];//46 a 60
+        var cartelaO = [];//61 a 75
+
+        function GerarArray(NumeroInicial, quantidade) {
+            var retorno = []
+            for (var i = 0; i < quantidade; i++){
+                retorno.push(NumeroInicial)
+                NumeroInicial++;
+            }
+            return retorno
+        }
+        cartelaB = GerarArray(1,15);
+        console.log("Array da Coluna B");
+        console.log(cartelaB);
+
+        cartelaI = GerarArray(16,15);
+        console.log("Array da Coluna I");
+        console.log(cartelaI);
+
+        cartelaN = GerarArray(31,15);
+        console.log("Array da Coluna N");
+        console.log(cartelaN);
+
+        cartelaG = GerarArray(46,15);
+        console.log("Array da Coluna G");
+        console.log(cartelaG);
+
+        cartelaO = GerarArray(61,15);
+        console.log("Array da Coluna O");
+        console.log(cartelaO);
+
+        /*
+        EXERCICIO PARA NOTA: FAÇA 5 ARRAYS, UM PARA CADA LETRA DO BINGO E DENTRO DELES COLOQUE 5 NUMERO REFERENTES A SUA LETRA SEM REPETIR NENHUM NUMERO TUDO DINAMICAMENTE
+        */
+       
+    </script>
 </body>
 </html>
