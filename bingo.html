@@ -30,6 +30,13 @@
             background-color: yellow;
         }
 
+        img{
+            height: 50px;
+            height: 5 0px;
+            justify-content: center;
+
+        }
+
     </style>
 </head>
 <body>
@@ -46,7 +53,7 @@
         </thead>
         <tbody>
             <tr>
-                <td id="b1" onclick="marcarsorteado()">1</td>
+                <td id="b1" onclick="marcarsorteado('b1', this)">1</td>
                 <td id="i1">17</td>
                 <td id="n1">33</td>
                 <td id="g1">60</td>
@@ -130,11 +137,18 @@
         console.log(b4);
         console.log(b5);
 
-        function marcarsorteado(){
-            alert ("deu certo o clique")
+        function marcarsorteado(nomeId, elemento){
+            console.log("Elemento=")
+            console.log(elemento)
+            console.log(nomeId)
+            elemento.style.backgroundColor = "red";
+            alert(elemento.style.backgroundColor);
+            if(elemento.style.backgroundColo == "red")
+            {
+                alert("a cor é a red")
+            }
+
         }
-
-
         /*
         EXERCICIO PARA NOTA: FAÇA 5 ARRAYS, UM PARA CADA LETRA DO BINGO E DENTRO DELES COLOQUE 5 NUMERO REFERENTES A SUA LETRA SEM REPETIR NENHUM NUMERO TUDO DINAMICAMENTE
         */
