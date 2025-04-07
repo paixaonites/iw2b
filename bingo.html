@@ -89,6 +89,11 @@
             </tr>
             </tbody>
         </table>
+
+        <button onclick="GerarCartela()">
+            Gerar Cartela
+        </button>
+            
     </div>
 
     
@@ -98,6 +103,29 @@
         var cartelaN = [];//31 a 45
         var cartelaG = [];//46 a 60
         var cartelaO = [];//61 a 75
+        
+        function GerarCartela(){
+            for (var i = 1;i <= 5; i++){
+                var td = document.getElementById("b"+i)
+                td.innerText = cartelaB[i]
+            }
+            for (var i = 1;i <= 5; i++){
+                var td = document.getElementById("i"+i)
+                td.innerText = cartelaI[i]
+            }
+            for (var i = 1;i <= 5; i++){
+                var td = document.getElementById("n"+i)
+                td.innerText = cartelaN[i]
+            }
+            for (var i = 1;i <= 5; i++){
+                var td = document.getElementById("g"+i)
+                td.innerText = cartelaG[i]
+            }
+            for (var i = 1;i <= 5; i++){
+                var td = document.getElementById("o"+i)
+                td.innerText = cartelaO[i]
+            }
+        }
 
         function GerarArray(NumeroInicial, quantidade) {
             var retorno = []
