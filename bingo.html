@@ -36,10 +36,16 @@
             justify-content: center;
 
         }
+        h1{
+            
+
+        }
 
     </style>
 </head>
 <body>
+
+
     <div>
         <table>
             <thead>
@@ -82,7 +88,7 @@
             </tr>
             <tr>
                 <td id="b5" onclick="marcarsorteado('b5', this)">11</td>
-                <td id="i5" onclick="marcarsorteado('i5', this)">28</td>
+                <td id="i5" onclick="marcarsorteado('i5', this)">28</td> 
                 <td id="n5" onclick="marcarsorteado('n5', this)">44</td>
                 <td id="g5" onclick="marcarsorteado('g5', this)">70</td>
                 <td id="o5" onclick="marcarsorteado('o5', this)">75</td>
@@ -97,11 +103,13 @@
     </div>
 
     <script type="text/javascript">
+        
         var cartelaB = [];//1 a 15
         var cartelaI = [];//16 a 30
         var cartelaN = [];//31 a 45
         var cartelaG = [];//46 a 60
         var cartelaO = [];//61 a 75
+        var Sorteio = [];//Sortear Numero
 
         function GerarArray(NumeroInicial, quantidade) {
             var retorno = []
