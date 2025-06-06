@@ -1,13 +1,56 @@
-<script>
-    var  cadeira = {
-        "cor" : "vermelha",
-        "girar" : () => { alert("oi") },
-        "subir": () => { document.write("subindo")},
-        "descendo": () => {console.log("descendo")},
-        "andar": (direcao) => {alert("sentido: "+direcao)}
-    }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Objetos em JavaScript</title>
+</head>
+<body>
 
-    cadeira.girar()
-    cadeira.descendo()
-    cadeira.andar("Em Frente")
-</script>
+  <div id="coresCarros"></div>
+  <div id="cidadePessoa"></div>
+
+  <script>
+    var carro = {
+      marca: "Toyota",
+      modelo: "Corolla",
+      ano: 2020
+    };
+    
+    document.write("Modelo do carro: " + carro.modelo + "<br>");
+
+    carro.ano = 2024;
+
+    carro.cor = "vermelho";
+
+    var carro2 = {
+      marca: "Honda",
+      modelo: "Civic",
+      ano: 2023,
+      cor: "azul"
+    };
+
+    var carro3 = {
+      marca: "Ford",
+      modelo: "Fiesta",
+      ano: 2022,
+      cor: "preto"
+    };
+
+    var coresTexto = "Cores dos carros: " + carro.cor + ", " + carro2.cor + ", " + carro3.cor;
+    document.getElementById("coresCarros").innerText = coresTexto;
+
+    var pessoa = {
+      nome: "Ana",
+      endereco: {
+        rua: "Rua das Palmeiras",
+        numero: 789,
+        cidade: "Salvador"
+      }
+    };
+
+    var cidade = pessoa.endereco.cidade;
+    document.getElementById("cidadePessoa").innerText = "Cidade da pessoa: " + cidade;
+  </script>
+
+</body>
+</html>
